@@ -37,3 +37,51 @@ prueba-tecnica-equifax/!**/src/test/**/build/
 prueba-tecnica-equifax/.vscode/
 
 ###########################################
+
+
+###########################################
+# ANGULAR
+###########################################
+
+
+
+# Compiled output
+/prueba-tecnica-equifax-front/dist
+/prueba-tecnica-equifax-front/tmp
+/prueba-tecnica-equifax-front/out-tsc
+/prueba-tecnica-equifax-front/bazel-out
+
+# Node
+/prueba-tecnica-equifax-front/node_modules
+prueba-tecnica-equifax-front/npm-debug.log
+prueba-tecnica-equifax-front/yarn-error.log
+
+# IDEs and editors
+prueba-tecnica-equifax-front/.idea/
+prueba-tecnica-equifax-front/.project
+prueba-tecnica-equifax-front/.classpath
+prueba-tecnica-equifax-front/.c9/
+prueba-tecnica-equifax-front/*.launch
+prueba-tecnica-equifax-front/.settings/
+prueba-tecnica-equifax-front/*.sublime-workspace
+
+# Visual Studio Code
+prueba-tecnica-equifax-front/.vscode/*
+prueba-tecnica-equifax-front/!.vscode/settings.json
+prueba-tecnica-equifax-front/!.vscode/tasks.json
+prueba-tecnica-equifax-front/!.vscode/launch.json
+prueba-tecnica-equifax-front/!.vscode/extensions.json
+prueba-tecnica-equifax-front/.history/*
+
+# Miscellaneous
+/prueba-tecnica-equifax-front/.angular/cache
+prueba-tecnica-equifax-front/.sass-cache/
+/prueba-tecnica-equifax-front/connect.lock
+/prueba-tecnica-equifax-front/coverage
+/prueba-tecnica-equifax-front/libpeerconnection.log
+prueba-tecnica-equifax-front/testem.log
+/prueba-tecnica-equifax-front/typings
+
+# System files
+prueba-tecnica-equifax-front/.DS_Store
+prueba-tecnica-equifax-front/Thumbs.db
