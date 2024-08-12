@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: mi_basedatos
+      POSTGRES_USER: usuario
+      POSTGRES_PASSWORD: contraseña
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - backend
+
+  springboot:
+    build:
+      context: ./ruta-a-springboot
+      dockerfile: Dockerfile
+    depends_on:
+      - postgres
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/mi_basedatos
+      SPRING_DATASOURCE_USERNAME: usuario
+      SPRING_DATASOURCE_PASSWORD: contraseña
+    networks:
+      - backend
+
+  angular:
+    build:
+      context: ./ruta-a-angular
+      dockerfile: Dockerfile
+    depends_on:
+      - springboot
+    ports:
+      - "80:80"
+    networks:
+      - backend
+      - frontend
+
+networks:
+  backend:
+  frontend:
+
+volumes:
+  postgres-data:

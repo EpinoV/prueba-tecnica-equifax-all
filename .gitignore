@@ -1,0 +1,39 @@
+###########################################
+# SPRING-BOOT
+###########################################
+
+prueba-tecnica-equifax/HELP.md
+prueba-tecnica-equifax/target/
+prueba-tecnica-equifax/!.mvn/wrapper/maven-wrapper.jar
+prueba-tecnica-equifax/!**/src/main/**/target/
+prueba-tecnica-equifax/!**/src/test/**/target/
+
+### STS ###
+prueba-tecnica-equifax/.apt_generated
+prueba-tecnica-equifax/.classpath
+prueba-tecnica-equifax/.factorypath
+prueba-tecnica-equifax/.project
+prueba-tecnica-equifax/.settings
+prueba-tecnica-equifax/.springBeans
+prueba-tecnica-equifax/.sts4-cache
+
+### IntelliJ IDEA ###
+prueba-tecnica-equifax/.idea
+prueba-tecnica-equifax/*.iws
+prueba-tecnica-equifax/*.iml
+prueba-tecnica-equifax/*.ipr
+
+### NetBeans ###
+/prueba-tecnica-equifax/nbproject/private/
+/prueba-tecnica-equifax/nbbuild/
+/prueba-tecnica-equifax/dist/
+/prueba-tecnica-equifax/nbdist/
+/prueba-tecnica-equifax/.nb-gradle/
+prueba-tecnica-equifax/build/
+prueba-tecnica-equifax/!**/src/main/**/build/
+prueba-tecnica-equifax/!**/src/test/**/build/
+
+### VS Code ###
+prueba-tecnica-equifax/.vscode/
+
+###########################################

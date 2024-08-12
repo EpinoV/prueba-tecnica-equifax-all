@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "24038f77-1a56-4b40-83be-928d3f96ea33",
+		"name": "prueba-tecnica-equifax",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5448507"
+	},
+	"item": [
+		{
+			"name": "Authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"eduardo@edu.cl\",\n    \"password\": \"user1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8086/prueba-tecnica-equifax/api/v1/public/auth/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"prueba-tecnica-equifax",
+						"api",
+						"v1",
+						"public",
+						"auth",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Eduardo\",\n    \"email\": \"eduardo@edu.cl\",\n    \"password\": \"user1234\",\n    \"rut\": \"1-9\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8086/prueba-tecnica-equifax/api/v1/public/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"prueba-tecnica-equifax",
+						"api",
+						"v1",
+						"public",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Data",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlZHVhcmRvQGVkdS5jbCIsImlhdCI6MTcyMzIxNTg1OSwiZXhwIjoxNzIzMzAyMjU5fQ.ouDiApi3b-6r9zFzwwidp9lSwTemcsZEGh8Jpq43TG0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8086/prueba-tecnica-equifax/api/v1/private/allData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"prueba-tecnica-equifax",
+						"api",
+						"v1",
+						"private",
+						"allData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Data",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlZHVhcmRvQGVkdS5jbCIsImlhdCI6MTcyMzIxNTg1OSwiZXhwIjoxNzIzMzAyMjU5fQ.ouDiApi3b-6r9zFzwwidp9lSwTemcsZEGh8Jpq43TG0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Andrea\",\n    \"email\": \"andrea@test.cl\",\n    \"celular\": \"+5698776544\",\n    \"rut\": \"1-9\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8086/prueba-tecnica-equifax/api/v1/private/newData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"prueba-tecnica-equifax",
+						"api",
+						"v1",
+						"private",
+						"newData"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

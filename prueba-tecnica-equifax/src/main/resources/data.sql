@@ -1,0 +1,2 @@
+INSERT INTO USERS (USER_ID, NAME, EMAIL, PASSWORD,ROLE, CREATED, MODIFIED, LAST_LOGIN, TOKEN, ISACTIVE) VALUES (-1, 'admin00', 'admin00@equifax.cl', '$2a$10$5sZcL9l77RpREwiPFncpbupkbRmqPbWeH.V9erQll7xd0rFkC6OjG', 'ADMIN', null, null, null, null, null);
+INSERT INTO USERS (USER_ID, NAME, EMAIL, PASSWORD,ROLE, CREATED, MODIFIED, LAST_LOGIN, TOKEN, ISACTIVE) VALUES (-2, 'user00', 'user00@equifax.cl', '$2a$10$5sZcL9l77RpREwiPFncpbupkbRmqPbWeH.V9erQll7xd0rFkC6OjG', 'USER', null, null, null, null, null);
