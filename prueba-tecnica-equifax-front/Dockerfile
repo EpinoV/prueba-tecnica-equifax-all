@@ -1,0 +1,13 @@
+# Etapa 1: Construcción
+FROM node:16-alpine AS build
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+RUN npm run build --prod
+
+# Etapa 2: Servir la aplicación
+FROM nginx:alpine
+COPY --from=build /app/dist/prueba-tecnica-equifax-front /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
