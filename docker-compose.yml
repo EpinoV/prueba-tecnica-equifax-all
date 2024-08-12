@@ -4,9 +4,9 @@ services:
   postgres:
     image: postgres:15
     environment:
-      POSTGRES_DB: mi_basedatos
-      POSTGRES_USER: usuario
-      POSTGRES_PASSWORD: contraseña
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: pgre2024
     volumes:
       - postgres-data:/var/lib/postgresql/data
     networks:
@@ -14,20 +14,20 @@ services:
 
   springboot:
     build:
-      context: ./ruta-a-springboot
+      context: ./prueba-tecnica-equifax
       dockerfile: Dockerfile
     depends_on:
       - postgres
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/mi_basedatos
-      SPRING_DATASOURCE_USERNAME: usuario
-      SPRING_DATASOURCE_PASSWORD: contraseña
+      SPRING_DATASOURCE_URL: jdbc:postgresql://localhost:5432/mi_basedatos
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: pgre2024
     networks:
       - backend
 
   angular:
     build:
-      context: ./ruta-a-angular
+      context: ./prueba-tecnica-equifax-front
       dockerfile: Dockerfile
     depends_on:
       - springboot
